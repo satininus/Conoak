@@ -1,0 +1,43 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+<body id="sub" class="about">
+
+	<div id="container">
+			<div id="masthead">
+				<div id="logo">
+					<h1><%= link_to 'ConOak Partners', root_path %></h1>
+				</div>
+				<div id="navigation">
+					<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+					</ul>
+				</div>
+				<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+			</div>
+			<div id="content">
+				<div id="main">
+					<h3>Connie's Corner</h3>
+					
+					
+					<span style="font-size: larger; "><strong><%= sanitize @post.subject, :tags => %w(p) %></strong></span>
+					<span style="font-size: larger; "> <br />
+					</span>
+					<p><%= sanitize @post.post, :tags => %w(p b span strong br) %></p>
+
+
+<p>
+<% if current_user %> 
+<%= link_to 'Edit Article', edit_post_path(@post) %> | <%= link_to "Archive", archive_path( :id => @post.id ) %> | <%= link_to "Delete Post", @post, :confirm => 'Are you sure?', :method => :delete %> | 
+<% end %>
+&laquo;<strong><%= link_to "Back to Connie's Corner", posts_path %></strong></p>

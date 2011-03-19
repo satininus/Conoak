@@ -1,0 +1,75 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>Partners</h3>
+				<div class="cushycms"><p><span style="font-size: larger; "><strong>Advantage Insurance Network/Cavalier Group</strong><br />
+2801 Towngate Rd. Suite 350<br />
+Westlake Village, CA 91361 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>Advisor Consulting Group</strong><br />
+4266 Valley Meadow Road <br />
+Encino, CA 91436 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>AgencyONE</strong><br />
+6500 Rock Spring Drive, Suite 450<br />
+Bethesda, MA 20817 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>CORE Group</strong><br />
+7373 N. Scottsdale Road <br />
+Scottsdale, AZ 85253 					</span></p>
+<p><span style="font-size: larger; ">	 						<strong>Insurance Designers</strong><br />
+1560 East 21st St. Suite 200<br />
+Tulsa, OK 74114 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>Low-Load Insurance Services, Inc</strong><br />
+2907 W. Bay to Bay Blvd., Suite 102<br />
+Tampa, FL 33629 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>Marketing Group</strong><br />
+3337 Winthrop Ave. <br />
+Fort Worth, TX 76116 					</span></p>
+<p><span style="font-size: larger; "> 						<small><em>Current as of April, 2010.</em></small></span></p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>     
+					<li><%= link_to 'PARTNERS', partners_path %></li>    
+					<li><%= link_to 'RESOURCES', resources_path %></li> 
+					<li><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
+</html>

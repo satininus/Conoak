@@ -1,0 +1,64 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>Resources</h3>
+				<div class="cushycms"><p><span style="font-size: larger; ">On this page you'll find links to sites which we believe contain useful data.  Check back, as we periodically add to the list.    					</span></p>
+<p><span style="font-size: larger; "> 						<strong>Inc.com</strong><br />
+A site devoted to innovation in small business operations.<br />
+</span><a href="http://www.inc.com" target="_blank"><span style="font-size: larger; ">www.inc.com</span></a></p>
+<p><span style="font-size: larger; "> 						<strong>The Insurance Information Institute</strong><br />
+An organization whose stated goal is to help consumers better understand life/health insurance.<br />
+</span><a href="http://www.iii.org" target="_blank"><span style="font-size: larger; ">www.iii.org</span></a></p>
+<p><strong><a href="http://www.calculators.usatoday.com" target="_blank"><span style="font-size: larger; ">Calculator for All Your Needs</span></a></strong></p>
+<p><strong><a href="glossary-of-terms.html"><span style="font-size: larger; ">Glossary of Terms<br />
+</span></a></strong></p></div>
+				<br />
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>     
+					<li><%= link_to 'PARTNERS', partners_path %></li>    
+					<li><%= link_to 'RESOURCES', resources_path %></li>  
+					<li><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<% content_for :head do %>
+
+<!--[if lte IE 6]>
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+
+<% end %>
+
+
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>About</h3>
+				<div class="cushycms"><p><span style="font-size: larger; "><%= image_tag 'img_connie.jpg', :class => 'float-right', :height => '227', :width => '234' %><br />
+<strong>ConOak Partners<br />
+</strong><br />
+At ConOak Partners, we keep the client's ultimate outcome foremost in our minds at all stages of planning. &nbsp;Every plan we design is unique and caters to the individual client's specific needs; we strongly disapprove of &quot;cookie-cutter&quot; approaches. &nbsp;<br />
+<br />
+Additionally, we have a network of talented partners to call upon from coast to coast. &nbsp;We are able to draw upon this pool of skilled professionals to appropriately staff any project, from the simplest term insurance case to a full estate plan for a high net worth family.&nbsp;<br type="_moz" />
+</span></p>
+<span style="font-size: larger; ">
+<p><strong>Constance M. Seay</strong></p>
+</span><span style="font-size: large; ">  </span>
+<p><span style="font-size: larger; ">Connie Seay, founder and President of ConOak Partners, knows from personal experience the joys and heartaches that can result from having family wealth.  Her own family history is filled with stories of triumph and tragedy which taught her life lessons that gave her the passion and understanding to help others.</span></p>
+<p><span style="font-size: larger; ">She has built a solid reputation for developing innovative and cutting-edge solutions to meet the needs of her clients. &nbsp;She was one of the first professionals in the Oklahoma market to offer large premium financing techniques. &nbsp;Connie is also the only Oklahoma member of the prestigious financial services organization, </span><a href="http://www.int-forum.org"><span style="font-size: larger; ">The International Forum</span></a><span style="font-size: larger; ">.<br />
+<br />
+Additionally, Connie is active in her local community, serving on the Board of Directors of the Foundation for Tulsa Public Schools, a non-profit organization dedicated to improving Tulsa's public school districts. </span>&nbsp;</p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>
+					<li><%= link_to 'PARTNERS', partners_path %></li>
+					<li><%= link_to 'RESOURCES', resources_path %></li>
+					<li><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>

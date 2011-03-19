@@ -1,0 +1,76 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>Connie's Corner</h3>
+				
+				<div class="cushycms"><p><span style="font-size: larger; ">Thanks for visiting our site. Within Connie's Corner, I'll offer financial tips and much more. It's a place to share my passions in life and those of our clients, too. Visit often to learn about special events, travel experiences and the good things in life. I hope to offer a greater appreciation of the world around us and will update periodically. Please feel free to share your feedback on these or any other items you would like discussed.</span></p>
+				
+				<% @posts.each do |post| %>
+					
+						<p><span style="font-size: larger; "><strong><%= sanitize post.subject, :tags => %w( p b ) %></strong></span><br/>
+						<%= sanitize post.preview, :tags => %w( p b u i em strong underline ul li ol ) %> <%= link_to 'Read More', post_path(post), :style => 'font-weight : bold; font-size: larger;' %></p>
+						<% if current_user %>
+							<%= link_to 'Edit Article', edit_post_path(post) %> | <%= link_to "Activate", activate_path( :id => post.id ) %> | <%= link_to "Delete Post", post, :confirm => 'Are you sure?', :method => :delete %>
+						<% end %>
+					
+				<% end %>
+				
+			</div>
+			
+		<% if current_user %>
+		<%= link_to 'New Article', new_post_path %> |  
+		<% end %>
+		<%= link_to 'View Current Posts', posts_path %>
+			
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>     
+					<li><%= link_to 'PARTNERS', partners_path %></li>    
+					<li><%= link_to 'RESOURCES', resources_path %></li>  
+					<li><%= link_to 'CONTACT', contact_path %></li>
+					<% if current_user %>
+						<li><%= link_to 'LOGOUT', logout_path %></li>
+					<% else %>
+						<li><%= link_to 'LOGIN', login_path %></li>
+					<% end %>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>

@@ -1,0 +1,11 @@
+<div id="user_nav">  
+  <p><%= link_to "Register", new_user_path %>  | 
+  
+  <% if current_user %>
+  	Logged in as: <%= current_user.username %> | 
+    <%= link_to "Edit profile", edit_user_path(current_user.id) %>  | 
+    <%= link_to "Logout", logout_path %></p>
+  <% else %>
+    <%= link_to "Login", login_path %>
+  <% end %>
+</div>  

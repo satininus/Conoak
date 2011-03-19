@@ -1,0 +1,85 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>Case Studies</h3>
+				<div class="cushycms"><p><span style="font-size: larger; ">ConOak Partners offers a variety of life insurance repositioning options to clients:  					</span></p>
+<ul>
+    <li><span style="font-size: larger; ">Newer, guaranteed products are performing better than older policies</span></li>
+    <li><span style="font-size: larger; ">Clients can maintain their current death benefit at a reduced rate</span></li>
+    <li><span style="font-size: larger; ">Cost of Insurance (COI) per million has been reduced, making it possible to buy more death benefit with less money.</span></li>
+</ul>
+<p><span style="font-size: larger; "> 						Examples of repositioning benefits for clients in the senior market: 					</span></p>
+<p><span style="font-size: larger; "> 						<strong>Male, age 74: Repositioning for Spouse</strong><br />
+Client had multiple whole-life policies with two different carriers. ConOak  explored the market for a policy, guaranteed to age 100, which offered the client a  choice of options for death benefit and funding amounts: 					</span></p>
+<ul>
+    <li><span style="font-size: larger; ">a 43% increase in death benefit for no additional out-of-pocket expenses</span></li>
+    OR
+    <li><span style="font-size: larger; ">an 82% increase in death benefit with only 30% additional annual funding</span></li>
+</ul>
+<hr />
+<p><span style="font-size: larger; "> 						<strong>Couple, age 76 &amp; 79: Estate Planning</strong><br />
+ConOak facilitated combining two non-guaranteed policies to one second-to-die policy guaranteed to age 100. Annual funding was reduced by 71%.  					</span></p>
+<hr />
+<p><span style="font-size: larger; "> 						<strong>Male, age 81: Repositioning for Child (Owner Beneficiary)</strong><br />
+With 13% increase in annual funding, ConOak secured an additional 24% coverage for the client. Furthermore, the new coverage was a guaranteed policy replacing two non-guaranteed policies.  					</span></p>
+<hr />
+<p><span style="font-size: larger; "> 						<strong>Male, age 70: Corporate Deferred Compensation Upgrade</strong><br />
+ConOak assisted a corporate client in exchanging four outdated life insurance policies for a single superior policy as part of an employee&#39;s deferred compensation plan. The client&#39;s options included: 					</span></p>
+<ul>
+    <li><span style="font-size: larger; ">For the same annual funding, an additional $1,771,871 in coverage (an increase  of 215%)</span></li>
+    OR
+    <li><span style="font-size: larger; ">A 5% reduction in annual funding with $1, 712,829 additional coverage (increase of $208%)</span></li>
+</ul>
+<p><span style="font-size: larger; "> 						The new coverage is a guaranteed policy replacing four non-guaranteed policies.</span></p></div>
+				<p>
+					&laquo; <%= link_to 'SERVICES', services_path, :style => 'font-weight: bold' %>
+				</p>
+				<br />
+			</div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>     
+					<li><%= link_to 'PARTNERS', partners_path %></li>    
+					<li><%= link_to 'RESOURCES', resources_path %></li>  
+					<li><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
+</html>

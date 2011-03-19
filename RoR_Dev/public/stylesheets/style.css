@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}	
+
+body {
+	background: #dddddd;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: #010101;
+}
+
+img { border: 0; }
+
+img.float-right { float: right; padding-left: 20px; padding-bottom: 10px; }
+
+img.float-left { float: left; padding-right: 20px; padding-bottom: 10px; }
+
+h2 {
+	font-size: 2em;
+	margin: 15px 0 8px 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	margin: 15px 0 8px 0;
+}
+
+p {
+	margin: 0 0 12px 0;
+}
+
+a {
+	color: #1b533e;
+	text-decoration: none;
+}
+
+a:hover { color: #010101; }
+
+.clear { clear: both; }
+
+#container {
+	width: 861px;
+	padding: 0 23px 0 77px;
+	margin: 0 auto;
+	font-size: .7em;
+	line-height: 1.5em;
+	height: 100%;
+}
+
+body#home { background: #dddddd url(../images/bg_body.jpg) no-repeat center top; }
+
+#home #container { background: url(../images/bg_container.jpg) no-repeat center top; }
+
+body#sub { background: #dddddd url(../images/bg_body.jpg) no-repeat center -80px; }
+
+#sub #container { background: url(../images/bg_container.jpg) no-repeat center -80px; }
+
+body#sub.about, #sub.about #container { background: #dddddd url(../images/bg_about.jpg) no-repeat center -80px; }
+
+#masthead {
+	width: 860px;
+}
+
+#logo {
+	float: left;
+	width: 258px;
+	height: 109px;
+}
+
+#logo h1 a {
+	display: block;
+	text-indent: -9000em;
+}
+
+#home #logo h1 a {
+	width: 258px;
+	height: 109px;
+	background: url(../images/logo_conoak-partners.gif) no-repeat 0 0;
+	margin: 61px 0 0 0;
+}
+
+#sub #logo h1 a {
+	width: 206px;
+	height: 87px;
+	background: url(../images/logo_conoak-partners_sm.gif) no-repeat 0 0;
+	margin: 13px 0 0 28px;
+}
+
+#leaf { 
+	float: right;
+	clear: both;
+	margin-top: -148px;
+	margin-right: -14px;
+}
+
+#flash {
+	float: right;
+	height: 185px;
+}
+
+#navigation {
+	float: right;
+	padding: 0 1px 0 0;
+}
+
+#home #navigation { margin: 5px 0 0 0; clear: right; width: 533px; }
+
+#sub #navigation { margin: 111px 0 0 0; }
+
+#navigation li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#navigation li a {
+	display: block;
+	height: 34px;
+	padding: 19px 0 0 0;
+	color: #010101;
+	text-decoration: none;
+}
+
+#navigation li#nav-about a { width: 96px; }
+#navigation li#nav-about a:hover, #navigation li#nav-about a:active, #navigation li#nav-about a:focus, #navigation li#nav-about a.selected { 
+	background: url(../images/nav_about.jpg) no-repeat 0 0; 
+	color: #fefefe;
+}
+#navigation li#nav-services { padding-left: 5px; }
+#navigation li#nav-services a { width: 106px; }
+#navigation li#nav-services a:hover, #navigation li#nav-services a:active, #navigation li#nav-services a:focus, #navigation li#nav-services a.selected { 
+	background: url(../images/nav_services.jpg) no-repeat 0 0; 
+	color: #fefefe;
+}
+#navigation li#nav-partners { padding-left: 5px; }
+#navigation li#nav-partners a { width: 104px; }
+#navigation li#nav-partners a:hover, #navigation li#nav-partners a:active, #navigation li#nav-partners a:focus, #navigation li#nav-partners a.selected { 
+	background: url(../images/nav_partners.jpg) no-repeat 0 0; 
+	color: #fefefe;
+}
+#navigation li#nav-resources { padding-left: 5px; }
+#navigation li#nav-resources a { width: 104px; }
+#navigation li#nav-resources a:hover, #navigation li#nav-resources a:active, #navigation li#nav-resources a:focus, #navigation li#nav-resources a.selected { 
+	background: url(../images/nav_resources.jpg) no-repeat 0 0; 
+	color: #fefefe;
+}
+#navigation li#nav-contact { padding-left: 4px; }
+#navigation li#nav-contact a { width: 104px; }
+#navigation li#nav-contact a:hover, #navigation li#nav-contact a:active, #navigation li#nav-contact a:focus, #navigation li#nav-contact a.selected { 
+	background: url(../images/nav_contact.jpg) no-repeat 0 0; 
+	color: #fefefe;
+}
+
+#content {
+	clear: both;
+	width: 860px;
+	padding: 32px 0;
+}
+
+#sidebar {
+	float: left;
+	width: 251px;
+	color: #fefefe;
+}
+
+#sidebar a {
+	color: #fefefe;
+}
+
+#sidebar a:hover {
+	color: #ccc;
+}
+
+#main {
+	float: right;
+	width: 484px;
+	min-height: 530px;
+	padding: 0 24px 30px 0;
+}
+
+#sub.about #main {
+	width: 706px;
+	padding: 0 90px 0 0;
+}
+
+a#connies-corner {
+	display: block;
+	text-indent: -9000em;
+	width: 185px;
+	height: 197px;
+	background: url(../images/img_connies-corner2.jpg) no-repeat 0 0;
+	float: right;
+	margin-left: 10px;
+	margin-top: -15px;
+}
+
+#footer {
+	clear: both;
+	color: #a1a0a0;
+	font-size: .85em;
+	margin-left: 344px;
+	width: 484px;
+	font-weight: bold;
+}
+
+#sub.about #footer {
+	background: url(../images/bg_footer.jpg) no-repeat 0 0;
+	width: 960px;
+	padding: 12px 0;
+	margin-left: -76px;
+}
+
+#footer #text-nav {
+	float: left;
+}
+
+#sub.about #footer #text-nav {
+	padding-left: 270px;
+}
+
+#footer #text-nav li {
+	display: inline;
+	padding: 0 8px;
+}
+
+#footer a {
+	color: #f9f9f9;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#footer a:hover { text-decoration: underline; }
+
+#footer #copyright {
+	float: right;
+}
+
+#sub.about #footer #copyright {
+	padding-right: 50px;
+}
+
+#sub.about #main ul {
+	padding: 0 0 12px 0;
+}
+
+#sub.about #main li {
+	margin: 0 0 0 16px;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	background: #666666;
+	margin: 3px 0 15px 0;
+	border: 0;
+}

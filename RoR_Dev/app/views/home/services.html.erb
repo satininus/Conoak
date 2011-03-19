@@ -1,0 +1,72 @@
+<% content_for :head do %>
+<!--[if lte IE 6]> 
+    <script src="js/DD_belatedPNG.js"></script>
+    <script>
+      DD_belatedPNG.fix('#leaf, img');
+    </script>
+<![endif]-->
+<% end %>
+
+
+<body id="sub" class="about">
+
+	<div id="container">
+		<div id="masthead">
+			<div id="logo">
+				<h1><%= link_to 'ConOak Partners', root_path %></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li id="nav-about"><%= link_to 'ABOUT', about_path %></li>
+					<li id="nav-services"><%= link_to 'SERVICES', services_path %></li>
+					<li id="nav-partners"><%= link_to 'PARTNERS', partners_path %></li>
+					<li id="nav-resources"><%= link_to 'RESOURCES', resources_path %></li>
+					<li id="nav-contact"><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="leaf"><%= image_tag 'img_sub-leaf.png' %></div>
+		</div>
+		<div id="content">
+			<div id="main">
+				<h3>Services</h3>
+				<div class="cushycms"><p><span style="font-size: larger; "><strong><a href="case_studies.html">Read our Case Studies</a></strong></span></p>
+<p><span style="font-size: larger; "> 						<%= image_tag 'img_connie3.jpg', :class => 'float-right', :height => '227', :width => '234' %>We offer solutions to virtually any problem an affluent family might face, where estate planning is concerned. &nbsp;The only commonality among these solutions is that typically they have some sort of insurance product at their core- an &quot;engine&quot; which serves to drive the plan. &nbsp;<br />
+&nbsp;&nbsp;<br type="_moz" />
+</span></p>
+<p><span style="font-size: larger; "><strong>ESTATE PLANNING</strong><br />
+The bulk of our practice is concerned with maximizing the transfer of wealth from generation to generation, while ensuring that the values and work ethic which generated that wealth are not lost during the transfer. &nbsp;<br />
+<br />
+To that end, we use proprietary computer software to create accurate, detailed projections regarding the growth of the assets within your estate. &nbsp;This information forms the foundation on which we begin crafting a plan to not only sustain this wealth, but ensure that your heirs have the opportunity to enjoy it as well.&nbsp;<br />
+<br />
+We are also able to use our extensive experience with insurance products to 'fine-tune' a policy so that it performs exactly as needed; this typically means lower premiums for the client, or special features which off-the-shelf insurance products lack.<br />
+<br />
+As for passing on your values, we have extensive experience helping families identify which ideals are most important to them and then creating a way to convey these ideals to younger members of the family. We use a number of tools to accomplish this, including family retreats, putting pen to paper and creating compelling narratives detailing the history and trials of the family, and advising clients on educating their children and grandchildren on successful wealth management strategies.&nbsp;<br />
+<br type="_moz" />
+</span></p>
+<p><span style="font-size: larger; "> 						<strong>LONG TERM CARE</strong><br />
+There are a wide variety of insurance products designed to shield you from an equally wide variety of risks, but LTC insurance is a product for which we have particularly strong enthusiasm.   					</span></p>
+<p><span style="font-size: larger; "> 						Nobody plans on getting ill or being unable to work for prolonged periods of time, but if such a misfortune does befall you the financial consequences can be particularly draining (on top of everything else).  LTC insurance is an effective way for individuals to pay for the cost of services they may require in the event of a protracted illness.  For business owners, it provides a meaningful way to reward employees or even mitigate risks to their business plan.<br />
+<br type="_moz" />
+</span></p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<div id="text-nav">
+				<ul>
+					<li><%= link_to 'Home', root_path %></li>
+					<li><%= link_to 'ABOUT', about_path %></li>
+					<li><%= link_to 'SERVICES', services_path %></li>     
+					<li><%= link_to 'PARTNERS', partners_path %></li>     
+					<li><%= link_to 'RESOURCES', resources_path %></li> 
+					<li><%= link_to 'CONTACT', contact_path %></li>
+				</ul>
+			</div>
+			<div id="copyright">
+				ConOak Partners&reg; 2010
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</body>
